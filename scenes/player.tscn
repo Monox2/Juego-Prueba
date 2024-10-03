@@ -446,13 +446,23 @@ wait_time = 0.5
 [node name="deal_attack_timer" type="Timer" parent="."]
 wait_time = 0.5
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="world_camera" type="Camera2D" parent="."]
 position = Vector2(-19, -361)
 zoom = Vector2(4, 4)
 limit_left = 0
 limit_top = 0
 limit_right = 430
 limit_bottom = 207
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[node name="cliff_camera" type="Camera2D" parent="."]
+position = Vector2(-19, -361)
+zoom = Vector2(4, 4)
+limit_left = 0
+limit_top = 0
+limit_right = 430
+limit_bottom = 500
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
 
